@@ -320,6 +320,15 @@ h2 span {
     font-size: 20px;
     padding: 3px;
   }
+  #why-story{
+    display: none;
+  }
+  .story{
+    display: none;
+  }
+  .story-crad{
+    display: none;
+  }
 }
 @media (max-width: 360px){
   body{
