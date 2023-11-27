@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- page title -->
+  <title>Services</title>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+   rel="stylesheet">
+  
+  <!-- Files needed -->
+  <link rel="stylesheet" href="css/rooms.css">
+  <script src="js/scripts.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- main content -->
+  <header>
+    <a href="home.html" class="logo"><h1>Jeddah Hotel</h1></a>
+    <nav class="navigation">
+       <a href="index.html">Home</a>
+       <a href="rooms.html">Rooms</a>
+       <a href="services.html">Services</a>
+       <a href="about.html">About</a>
+       <a href="contact.html">Contact</a>
+       
+    </nav>
+  </header>
+  <section class="content1">
+  <!-- gym card  -->
+      <div class="room-card">
+        <img src="media/gym.jpg" alt="gym picture">
+        <div class="info">
+          <p>The Gym </p>
+          <p>
+            <span>10 $ / person</span>
+            <a href="#booking" class="book-btn">Book now</a>
+          </p>
+        </div>
+      </div>
+    
+   <!-- berakfast resturant card  -->
+      <div class="room-card">
+        <img src="media/resturant1.png" alt="breakfast resturant">
+        <div class="info">
+          <p>Breakfast</p>
+          <p>
+            <span>Free for residents in king room - small suite </span>
+            <br>
+            <span>5 $ / person</span>
+            <a href="#booking" class="book-btn">Book now</a>
+          </p>
+        </div>
+      </div>
+    
+      <!-- lunch -->
+      <div class="room-card">
+        <img src="media/resturant2.jpg" alt="lunch resturant">
+        <div class="info">
+          <p>Lunch</p>
+          <p>
+            <span>Free for residents in king room - small suite </span>
+            <br>
+            <span> 10 $ / person</span>
+            <a href="#booking" class="book-btn">Book now</a>
+          </p>
+        </div>
+      </div>
+  
+   <!-- dinner -->
+      <div class="room-card">
+        <img src="media/resturant3.jpg" alt="dinner resturant">
+        <div class="info">
+          <p>Dinner</p>
+          <p>
+            <span>Free for residents in king room - small suite </span>
+            <br>
+            <span> 20 $ / person</span>
+            <a href="#booking" class="book-btn">Book now</a>
+          </p>
+        </div>
+      </div>
+      <!-- wedding hall -->
+        <div class="room-card">
+          <img src="media/wedding_hall.jpg" alt="widding hall">
+          <div class="info">
+            <p>Wedding Hall</p>
+            <p>
+              <span>Hold more than 250 person</span>
+              <br>
+              <span>including Deserts / Dinner</span>
+              <br>
+              <span> 5000 $ / night</span>
+              <a href="#booking" class="book-btn">Book now</a>
+            </p>
+          </div>
+        </div>
+  </section>
+      <!-- booking card  -->
+      <div class="booking-box" id="booking">
+        <h2>Book a Service</h2>
+        <form action="/services" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">phone</label>
+            <input type="number" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="serviceType">Service Type:</label>
+            <select id="room-type" name="serviceType">
+              <option value="Gym">Gym</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+              <option value="Wedding hall">Wedding hall</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="check-in" name="checkin" required />
+          </div>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="footer-content">
+          <p>© 2023 Jeddah Hotel. All rights reserved.</p>
+          <p>
+            Developed by Nawaf Fahad, Bassam Alsulami, Abdulelah Barayan,Mashari bugshan
+          </p>
+        </div>
+      </footer>
+</body>
+
+</html>

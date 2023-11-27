@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+/* 
+colors to use 
+background color --> #D9D9D9
+section colors --> #284B63 
+text colors --> #ffffff
+other colors --> #353535 / #3C6E71
+ */
+body {
+  background-color: #501414;
+}
+* {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #501414;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+/*  for all sections */
+section {
+  padding: 100px 200px;
+}
+/* main section */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: url("../media/hotel_background2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h2 span {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* for all section start */
+.why {
+  background-color: #501414;
+  padding: 20px;
+}
+
+/* cards section  */
+.why-ans {
+  /* background-color:#5c2d2d ; */
+  background: url(../media/hotel2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #f0ebd8;
+  width: 23.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .icon {
+  color: #fdfafa;
+  text-align: center;
+}
+.card .icon img {
+  width: 270px;
+}
+.info {
+  text-align: center;
+}
+
+/* spa card image */
+.spa {
+  height: 200px;
+}
+
+/* button */
+.book-btn {
+  border: none;
+  background-color: #752626;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+
+.book-btn:hover {
+  background-color: #752626;
+  transform: scale(1.1);
+}
+/* our story section  */
+.story {
+  background: url(../media/background4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+.story-crad {
+  background-color: #f0ebd8c9;
+  width: 50em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.story-crad h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+/* image / jeddah section */
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  background-color: #752626;
+}
+
+.prev-button,
+.next-button {
+  font-size: 24px;
+  padding: 10px;
+  background-color: #111111;
+  border: none;
+  cursor: pointer;
+}
+
+#city-image {
+  max-width: 100%;
+  height: auto;
+  min-height: 70%;
+}
+.image-section .city-img {
+  width: 80%;
+  max-height: 70vh;
+}
+.jed-card {
+  background-color: #752626;
+  width: 100%;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 0;
+  transition: 0.7s ease;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+}
+.jed-card h3 {
+  font-size: 50px;
+}
+/* fotter  */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #752626;
+}
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  header{
+    padding: 10px;
+  }
+  .logo {
+   font-weight: 300;
+  }
+  .navigation a {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  section {
+    padding: 50px;
+  }
+  .main {
+    padding: 50px;
+  }
+  .story {
+    padding: 50px 20px; 
+  }
+  .story-crad {
+    width: 100%; 
+  }
+  .story-crad h3 {
+    font-size: 30px; 
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 60px; 
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .navigation a {
+    padding-left: 20px; 
+  }
+  section {
+    padding: 50px 150px; 
+  }
+  .story {
+    padding: 50px 150px; 
+  }
+  .story-crad {
+    width: 80%; 
+  }
+  .story-crad h3 {
+    font-size: 45px; 
+  }
+  
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    font-size: 13px;
+  }
+  header {
+    padding: 5px;
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .navigation a {
+    padding-left: 10px;
+  }
+  section {
+    padding: 30px;
+  }
+  .main {
+    padding: 30px;
+  }
+  .why{
+    font-size: 10px;
+  }
+  .card .icon img{
+    width: 200px;
+    max-height: 120px;
+  }
+ 
+}
+@media (max-width: 390px){
+  body{
+    font-size: 12px;
+  }
+  .why{
+    font-size: 8px;
+  }
+  .book-btn{
+    font-size: 20px;
+    padding: 3px;
+  }
+}
+@media (max-width: 360px){
+  body{
+    font-size: 10px;
+  }
+  .why{
+    font-size: 8px;
+  }
+  .book-btn{
+    font-size: 20px;
+    padding: 3px;
+  } 
+  .card .icon img{
+    width: 160px;
+    max-height: 120px;
+  }
+  
+}

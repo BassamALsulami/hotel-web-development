@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- page title -->
+  <title>Contact</title>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+   rel="stylesheet">
+  
+  <!-- Files needed -->
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="js/scripts.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- main content -->
+  <header>
+    <a href="home.html" class="logo"><h1>Jeddah Hotel</h1></a>
+    <nav class="navigation">
+       <a href="index.html">Home</a>
+       <a href="rooms.html">Rooms</a>
+       <a href="services.html">Services</a>
+       <a href="about.html">About</a>
+       <a href="contact.html">Contact</a>
+      
+    </nav>
+  </header>
+  <section class="container">
+    <h1>Contact us </h1>
+    <form action="/contact" method="post">
+      <div class="contactbox">
+        <div class="contact-top">
+          <h3>Send your request</h3>
+          <div class="input-row">
+            <div class="input-group">
+              <label>First Name</label>
+              <input type="text" name="firstName">
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Last Name</label>
+              <input type="text" name="lastName">
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Phone</label>
+              <input type="tel" name="phone">
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" name="email">
+            </div>
+          </div>
+          <div class="input-row">
+            <select id="language" name="language">
+              <option value="Arabic">Arabic</option>
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </div>
+          <div class="input-row">
+            <label>Message </label>
+            <textarea rows="5" name="message"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+    
+      <div class="contact-bottom">
+        <h3>Reach Us </h3>
+        <table>
+          <tr>
+            <td>Email :</td>
+            <td>JeddahHotel@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Phone :</td>
+            <td>+966563633821</td>
+          </tr>
+          <tr>
+            <td>Address :</td>
+            <td>Jddah city , university of jeddah , Asfan Road</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <p>© 2023 Jeddah Hotel. All rights reserved.</p>
+      <p>
+        Developed by Nawaf Fahad, Bassam Alsulami, Abdulelah Barayan,Mashari bugshan
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
