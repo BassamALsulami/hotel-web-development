@@ -111,7 +111,6 @@ app.post('/rooms', [
       to: process.env.SMTP_TO,
       subject: 'New Contact Form Submission',
       text: 'You have a new contact form submission!'
-      // You can also use HTML in the email body if needed
     };
     
     // Send the email when the form is submitted
