@@ -209,7 +209,7 @@ body {
 }
 
 /* Media query for screens with a width of 360px */
-@media (max-width: 360px) {
+@media (max-width: 390px) {
   header{
     padding: 5px 10px;
     font-size: 10px;
