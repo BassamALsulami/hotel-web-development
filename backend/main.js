@@ -92,6 +92,9 @@ app.post('/rooms', [
     if (error) {
     res.status(500).send('Error: ' + error);
     } 
+    else {
+    res.redirect('/bookAccept.html');
+    }
     });
     });
 
@@ -153,7 +156,7 @@ app.post('/rooms', [
           res.send('Error'); // Handle the error in the response
         } else {
           console.log('Email sent: ' + info.response);
-          res.send('Email sent'); // Send a success response
+          res.redirect('/emailSent.html'); // Send a success response
         }
       });
     });
