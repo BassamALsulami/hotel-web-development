@@ -280,25 +280,12 @@ h2 span {
   
 }
 
-@media (max-width: 480px) {
-  body {
-    padding: 0;
-    font-size: 13px;
-  }
+@media (max-width: 576px) {
   header {
     padding: 5px;
   }
-  .logo {
+  .logo{
     font-size: 1em;
-  }
-  .navigation a {
-    padding-left: 10px;
-  }
-  section {
-    padding: 30px;
-  }
-  .main {
-    padding: 30px;
   }
   .why{
     font-size: 10px;
@@ -307,11 +294,26 @@ h2 span {
     width: 200px;
     max-height: 120px;
   }
- 
+  .story {
+    padding: 50px 20px; 
+  }
+  .story-crad {
+    width: 100%; 
+  }
+  .story-crad h3 {
+    font-size: 30px; 
+  }
+  
 }
 @media (max-width: 390px){
   body{
     font-size: 12px;
+  }
+  header{
+    padding: 5px 2px;
+  }
+  .logo{
+    font-size: 1em;
   }
   .why{
     font-size: 8px;
@@ -320,14 +322,14 @@ h2 span {
     font-size: 20px;
     padding: 3px;
   }
-  #why-story{
-    display: none;
+  .story {
+    padding: 50px 20px; 
   }
-  .story{
-    display: none;
+  .story-crad {
+    width: 100%; 
   }
-  .story-crad{
-    display: none;
+  .story-crad h3 {
+    font-size: 30px; 
   }
 }
 @media (max-width: 360px){
