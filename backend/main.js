@@ -134,7 +134,7 @@ app.post('/rooms', [
     ],(req, res) => {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
-        return res.status(400).send("<h1>Error</h1>");
+        return res.status(400).send("<h1>you need to fill the form !! </h1>");
       }
       // sending email
       let firstName = req.body.firstName;
